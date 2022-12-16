@@ -5,6 +5,8 @@
 var isValid = function(s) {
     const stack = [];
     
+    if(s.length <= 1) return false;
+    
     for(let i = 0; i < s.length; i++) {
         if(s[i] === '(') {
             stack.push(')');
